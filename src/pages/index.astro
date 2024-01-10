@@ -1,0 +1,51 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Hero from '../components/Hero.astro'
+import Feature from '../components/Feature.astro'
+import Counter from '../components/Counter.astro'
+import ContentMedia from '../components/ContentMedia.astro'
+---
+
+<DefaultLayout title="Inicio">
+  <Hero />
+  <section class="my-64">
+    <div class="container">
+      <h2 class="mb-16 text-6xl">Servicios</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="mdi:laptop" title="Soporte Técnico">
+         Reparación de equipos de cómputo, formateos, instalación de programas, actualizaciones.
+        </Feature>
+        <Feature icon="mdi:access-point-network" title="Redes">
+          Cableado estructurado y fibra óptica, equipos wifi, enlaces inalámbricos.
+        </Feature>
+        <Feature icon="mdi:phone" title="Telefonía">
+          Conmutadores, telefonía IP.
+        </Feature>
+        <Feature icon="mdi:cctv" title="Cámaras de Seguridad">
+          Cámaras IP, CCTV, con movimiento, audio e infrarrojo.
+        </Feature>
+        <Feature icon="mdi:code-braces" title="Páginas WEB">
+          Desarrollo de páginas web totalmente personaliadas.
+        </Feature>
+        <Feature icon="mdi:application-brackets-outline" title="Apps personalizadas ">
+          Desarrollo de aplicaciones web para Pymes enfocadas a las necesidades de cada cliente.
+        </Feature>
+      </div>
+    </div>
+  </section>
+  <ContentMedia imgSrc="/tigres.jpg">
+    <h2>Club Tigres de Mérida A.C.</h2>
+    <p class="text-2xl">
+      Uno de nuestros sitios creados mas reciente <a href="https://clubtigresmeridafutbolamericano.com/"
+         target="_blank">visita el sitio web</a
+      >.
+    </p>
+  </ContentMedia>
+  <!-- 
+  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+    <h2>Nuestra ubicación</h2>
+    <p class="text-2xl">
+      Estamos ubicados....
+    </p>
+  </ContentMedia>-->
+</DefaultLayout>
